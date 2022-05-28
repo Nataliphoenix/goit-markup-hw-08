@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Портфолио</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+            <link rel="stylesheet" href="./css/main.min.css">
+      </head>
+      <body>
+            <header class="header">
+                  <div class="conteiner page-nav">
+                        <a href="./index.html" class="logo">Web<span class="page-nav_logo">Studio</span></a>
+                        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                              <svg class="menu-toggle_icon--open" width="40" height="40">
+                                    <use href="./images/icons.svg#icon-menu_mob"></use>
+                              </svg>
+                        </button>
+                        <nav class="page-nav_meny">
+                              <ul class="site-nav">
+                                    <li class="site-nav_item"><a class="site-nav_link"
+                                                href="./index.html" rel="noopener noreferrer nofollow">Студия</a></li>
+                                    <li class="site-nav_item"><a class="site-nav_link site-nav_link--active" href="./portfolio.html" rel="noopener noreferrer nofollow">Портфолио</a></li>
+                                    <li class="site-nav_item"><a class="site-nav_link" href="" rel="noopener noreferrer nofollow">Контакты</a></li>
+                              </ul>
+                        </nav>
+                        <ul class="site-contact">
+                              <li class="site-contact_item">
+                                    <a href="mailto:info@devstudio.com" class="site-contact_link">
+                                          <svg class="site-contact_icon" width="16" height="12">
+                                                <use href="./images/icons.svg#icon-mail"></use>
+                                          </svg>info@devstudio.com</a>
+                              </li>
+                              <li class="site-contact_item">
+                                    <a href="tel:+380961111111" class="site-contact_link">
+                                          <svg class="site-contact_icon" width="10" height="16">
+                                                <use href="./images/icons.svg#icon-tell"></use>
+                                          </svg>+38 096 111 11 11</a>
+                              </li>
+                        </ul>
+                  </div>
+                  <div class="menu-container js-menu-container" id="mobile-menu">
+                        <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+                              <svg class="menu-toggle_icon--close" width="40" height="40">
+                                    <use href="./images/icons.svg#icon-menu-close"></use>
+                              </svg>
+                        </button>
+                        <div class="mob-container">
+                              <ul class="mob-menu_list">
+                                    <li class="mob-menu_item"><a href="./index.html" class="mob-menu_link"
+                                                rel="noopener noreferrer nofollow">Студия</a></li>
+                                    <li class="mob-menu_item"><a href="./portfolio.html" class="mob-menu_link mob-menu_link--active"
+                                                rel="noopener noreferrer nofollow">Портфолио</a></li>
+                                    <li class="mob-menu_item"><a href="" class="mob-menu_link"
+                                                rel="noopener noreferrer nofollow">Контакты</a></li>
+                              </ul>
+                              <div class="mob-menu_bottom">
+                                    <ul class="mob-menu-contact">
+                                          <li class="mob-menu-contact_item">
+                                                <a href="mailto:info@devstudio.com"
+                                                      class="mob-menu-contact_link">info@devstudio.com</a>
+                                          </li>
+                                          <li class="mob-menu-contact_item">
+                                                <a href="tel:+380961111111" class="mob-menu-contact_link">+38 096 111 11 11</a>
+                                          </li>
+                                    </ul>
+                                    <ul class="mob-menu-social">
+                                          <li class="mob-menu-social_item"><a href="#" target="_blank"
+                                                      class="mob-menu-social_link social_link--dark" aria-label="Instagram"
+                                                      rel="noopener noreferrer nofollow">Instagram</a></li>
+                                          <li class="mob-menu-social_item"><a href="#" target="_blank"
+                                                      class="mob-menu-social_link social_link--dark" aria-label="Twitter"
+                                                      rel="noopener noreferrer nofollow">Twitter</a></li>
+                                          <li class="mob-menu-social_item"><a href="#" target="_blank"
+                                                      class="mob-menu-social_link social_link--dark" aria-label="Facebook"
+                                                      rel="noopener noreferrer nofollow">Facebook</a></li>
+                                          <li class="mob-menu-social_item"><a href="#" target="_blank"
+                                                      class="mob-menu-social_link social_link--dark" aria-label="LinkedIn"
+                                                      rel="noopener noreferrer nofollow">LinkedIn</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </header>
+            <main>
+                  <section class="section">
+                        <div class="conteiner">
+                        <h1 class="section_heading visually-hidden">Наши работы</h1>
+                        <ul class="filtr-choice">
+                              <li class="filtr-item"><button type="button" class="filtr-all">Все</button></li>
+                              <li class="filtr-item"><button type="button" class="filtr">Веб-сайты</button></li>
+                              <li class="filtr-item"><button type="button" class="filtr">Приложения</button></li>
+                              <li class="filtr-item"><button type="button" class="filtr">Дизайн</button></li>
+                              <li class="filtr-item"><button type="button" class="filtr">Маркетинг</button></li> 
+                        </ul>
+                        <ul class="filtr-part">
+                              <li class="part-item">
+                                    <a href="#" class="part-item-link">
+                                          <div class="filtr-thumb">
+                                                <picture>
+                                                      <source srcset="./images/img_5.jpg 1x,
+                                                            ./images/img_5_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:1200px)" />
+                                                      <source srcset="./images/img_5_tab.jpg 1x,
+                                                            ./images/img_5_tab_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:768px)" />
+                                                      <source srcset="./images/img_5_mob.jpg 1x,
+                                                            ./images/img_5_mob_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:320px)" />
+                                                      <img src="./images/img_5.jpg" alt="Наши работы">
+                                                </picture>
+                                                <div class="overlay-filtr-element">
+                                                      <p class="overlay-element">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                                            сервисов. Все
+                                                            это позволит посетителю
+                                                            получить исчерпывающие сведения о компании или частном лице.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="filtr-element">
+                                                <h3 class="filtr-title">Технокряк</h3>
+                                                <p class="filtr-list">Веб-сайт</p>
+                                          </div>   
+                                    </a>
+                              </li>
+                              <li class="part-item">
+                                    <a href="#" class="part-item-link">
+                                          <div class="filtr-thumb">
+                                                <picture>
+                                                      <source srcset="./images/img_6.jpg 1x,
+                                                            ./images/img_6_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:1200px)" />
+                                                      <source srcset="./images/img_6_tab.jpg 1x,
+                                                            ./images/img_6_tab_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:768px)" />
+                                                      <source srcset="./images/img_6_mob.jpg 1x,
+                                                            ./images/img_6_mob_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:320px)" />
+                                                      <img src="./images/img_6.jpg" alt="Постер New Orlean vs Golden Star">
+                                                </picture>
+                                                <div class="overlay-filtr-element">
+                                                      <p class="overlay-element">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                                            это позволит посетителю
+                                                            получить исчерпывающие сведения о компании или частном лице.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="filtr-element">
+                                                <h3 class="filtr-title">Постер New Orlean vs Golden Star</h3>
+                                                <p class="filtr-list">Дизайн</p>
+                                          </div>    
+                                    </a>
+                              </li>
+                              <li class="part-item">
+                                    <a href="#" class="part-item-link">
+                                          <div class="filtr-thumb">
+                                                <picture>
+                                                      <source srcset="./images/img_7.jpg 1x,
+                                                            ./images/img_7_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:1200px)" />
+                                                      <source srcset="./images/img_7_tab.jpg 1x,
+                                                            ./images/img_7_tab_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:768px)" />
+                                                      <source srcset="./images/img_7_mob.jpg 1x,
+                                                            ./images/img_7_mob_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:320px)" />
+                                                      <img src="./images/img_7.jpg" alt="Ресторан Seafood">
+                                                </picture>
+                                                <div class="overlay-filtr-element">
+                                                      <p class="overlay-element">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                                            это позволит посетителю
+                                                            получить исчерпывающие сведения о компании или частном лице.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="filtr-element">
+                                                <h3 class="filtr-title">Ресторан Seafood</h3>
+                                                <p class="filtr-list">Приложение</p>
+                                          </div>  
+                                    </a>
+                              </li>
+                              <li class="part-item">
+                                    <a href="#" class="part-item-link">
+                                          <div class="filtr-thumb">
+                                                <picture>
+                                                      <source srcset="./images/img_8.jpg 1x,
+                                                            ./images/img_8_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:1200px)" />
+                                                      <source srcset="./images/img_8_tab.jpg 1x,
+                                                            ./images/img_8_tab_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:768px)" />
+                                                      <source srcset="./images/img_8_mob.jpg 1x,
+                                                            ./images/img_8_mob_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:320px)" />
+                                                      <img src="./images/img_8.jpg" alt="Проект Prime">
+                                                </picture>
+                                                <div class="overlay-filtr-element">
+                                                      <p class="overlay-element">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                                            это позволит посетителю
+                                                            получить исчерпывающие сведения о компании или частном лице.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="filtr-element">
+                                                <h3 class="filtr-title">Проект Prime</h3>
+                                                <p class="filtr-list">Маркетинг</p>
+                                          </div> 
+                                    </a>
+                              </li>
+                              <li class="part-item">
+                                    <a href="#" class="part-item-link">
+                                          <div class="filtr-thumb">
+                                                <picture>
+                                                      <source srcset="./images/img_9.jpg 1x,
+                                                            ./images/img_9_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:1200px)" />
+                                                      <source srcset="./images/img_9_tab.jpg 1x,
+                                                            ./images/img_9_tab_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:768px)" />
+                                                      <source srcset="./images/img_9_mob.jpg 1x,
+                                                            ./images/img_9_mob_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:320px)" />
+                                                      <img src="./images/img_9.jpg" alt="Проект Boxes">
+                                                </picture>
+                                                <div class="overlay-filtr-element">
+                                                      <p class="overlay-element">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                                            это позволит посетителю
+                                                            получить исчерпывающие сведения о компании или частном лице.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="filtr-element">
+                                                <h3 class="filtr-title">Проект Boxes</h3>
+                                                <p class="filtr-list">Приложение</p>
+                                          </div>     
+                                    </a>
+                              </li>
+                              <li class="part-item">
+                                    <a href="#" class="part-item-link">
+                                          <div class="filtr-thumb">
+                                                <picture>
+                                                      <source srcset="./images/img_10.jpg 1x,
+                                                             ./images/img_10_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:1200px)" />
+                                                      <source srcset="./images/img_10_tab.jpg 1x,
+                                                            ./images/img_10_tab_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:768px)" />
+                                                      <source srcset="./images/img_10_mob.jpg 1x,
+                                                            ./images/img_10_mob_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:320px)" />
+                                                      <img src="./images/img_10.jpg" alt="Inspiration has no Borders">
+                                                </picture>
+                                                <div class="overlay-filtr-element">
+                                                      <p class="overlay-element">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                                            это позволит посетителю
+                                                            получить исчерпывающие сведения о компании или частном лице.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="filtr-element">
+                                                <h3 class="filtr-title">Inspiration has no Borders</h3>
+                                                <p class="filtr-list">Веб-сайт</p>
+                                          </div> 
+                                    </a>
+                              </li>
+                              <li class="part-item">
+                                    <a href="#" class="part-item-link">
+                                          <div class="filtr-thumb">
+                                                <picture>
+                                                      <source srcset="./images/img_11.jpg 1x,
+                                                            ./images/img_11_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:1200px)" />
+                                                      <source srcset="./images/img_11_tab.jpg 1x,
+                                                            ./images/img_11_tab_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:768px)" />
+                                                      <source srcset="./images/img_11_mob.jpg 1x,
+                                                            ./images/img_11_mob_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:320px)" />
+                                                      <img src="./images/img_11.jpg" alt="Издание Limited Edition">
+                                                </picture>
+                                                <div class="overlay-filtr-element">
+                                                      <p class="overlay-element">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                                            это позволит посетителю
+                                                            получить исчерпывающие сведения о компании или частном лице.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="filtr-element">
+                                                <h3 class="filtr-title">Издание Limited Edition</h3>
+                                                <p class="filtr-list">Дизайн</p>
+                                          </div>     
+                                    </a>
+                              </li>
+                              <li class="part-item">
+                                    <a href="#" class="part-item-link">
+                                          <div class="filtr-thumb">
+                                                <picture>
+                                                      <source
+                                                            srcset="./images/img_12.jpg 1x,
+                                                            ./images/img_12_2x.jpg 2x"
+                                                            type="image/jpeg" media="(min-widht:1200px)" />
+                                                      <source
+                                                            srcset="./images/img_12_tab.jpg 1x,
+                                                            ./images/img_12_tab_2x.jpg 2x"
+                                                            type="image/jpeg" media="(min-widht:768px)" />
+                                                      <source
+                                                            srcset="./images/img_12_mob.jpg 1x,
+                                                            ./images/img_12_mob_2x.jpg 2x"
+                                                            type="image/jpeg" media="(min-widht:320px)" />
+                                                      <img src="./images/img_12.jpg" alt="Проект LAB">
+                                                </picture>
+                                                <div class="overlay-filtr-element">
+                                                      <p class="overlay-element">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                                            это позволит посетителю
+                                                            получить исчерпывающие сведения о компании или частном лице.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="filtr-element">
+                                                <h3 class="filtr-title">Проект LAB</h3>
+                                                <p class="filtr-list">Маркетинг</p>
+                                          </div> 
+                                    </a>
+                              </li>
+                              <li class="part-item">
+                                    <a href="#" class="part-item-link">
+                                          <div class="filtr-thumb">
+                                                <picture>
+                                                      <source srcset="./images/img_13.jpg 1x,
+                                                            ./images/img_13_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:1200px)" />
+                                                      <source srcset="./images/img_13_tab.jpg 1x,
+                                                            ./images/img_13_tab_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:768px)" />
+                                                      <source srcset="./images/img_13_mob.jpg 1x,
+                                                            ./images/img_13_mob_2x.jpg 2x" type="image/jpeg"
+                                                            media="(min-widht:320px)" />
+                                                      <img src="./images/img_13.jpg" alt="Growing Business">
+                                                </picture>
+                                                <div class="overlay-filtr-element">
+                                                      <p class="overlay-element">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                                                            это позволит посетителю
+                                                            получить исчерпывающие сведения о компании или частном лице.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="filtr-element">
+                                                <h3 class="filtr-title">Growing Business</h3>
+                                                <p class="filtr-list">Приложение</p>
+                                          </div>   
+                                    </a>
+                              </li>
+                        </ul>
+                        </div>
+                  </section>
+            </main>
+            <footer class="footer_nav">
+                  <div class="conteiner footer_item">
+                        <div class="footer_thumb">
+                              <div class="footer_part">
+                                    <!--Адрес-->
+                                    <a href="./index.html" class="logo">Web<span class="footer_logo">Studio</span></a>
+                                    <address class="address">
+                                          <p class="address_map">г. Киев, пр-т Леси Украинки, 26</p>
+                                          <a class="address_link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                          <a class="address_link" href="tel:+380961111111">+38 096 111 11 11</a>
+                                    </address>
+                              </div>
+                              <div class="footer_social">
+                                    <p class="footer_title">присоединяйтесь</p>
+                                    <ul class="social">
+                                          <li class="social_item">
+                                                <a href="#" target="_blank" class="social_link social_link--light"
+                                                      aria-label="Instagram">
+                                                      <svg class="social_icon social_icon--color" width="20" height="20">
+                                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                                      </svg>
+                                                </a>
+                                          </li>
+                                          <li class="social_item">
+                                                <a href="#" target="_blank" class="social_link social_link--light"
+                                                      aria-label="Twitter">
+                                                      <svg class="social_icon social_icon--color" width="20" height="16.25">
+                                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                                      </svg>
+                                                </a>
+                                          </li>
+                                          <li class="social_item">
+                                                <a href="#" target="_blank" class="social_link social_link--light"
+                                                      aria-label="Facebook">
+                                                      <svg class="social_icon social_icon--color" width="20" height="20">
+                                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                                      </svg>
+                                                </a>
+                                          </li>
+                                          <li class="social_item">
+                                                <a href="#" target="_blank" class="social_link social_link--light"
+                                                      aria-label="Linkedin">
+                                                      <svg class="social_icon social_icon--color" width="20" height="20">
+                                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                                      </svg>
+                                                </a>
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                        <div>
+                              <div class="footer_form">
+                                    <p class="footer_title">Подпишитесь на рассылку</p>
+                                    <form class="footer_userEmail" autocomplete="on">
+                                          <label for="user_email"></label>
+                                          <input type="text" name="user_email" id="user_email" class="footer_input"
+                                                placeholder="E-mail" />
+                                          <button type="button" class="button button--subscribe">Подписаться</button>
+                                    </form>
+                              </div>
+                        </div>
+                  </div>
+            </footer>
+            <script src="./js/modal.js"></script>
+            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+                  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+                  crossorigin="anonymous"></script>
+            <script defer src="js/mobile-menu.js"></script>
+      </body>
+</html>

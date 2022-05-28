@@ -1,0 +1,145 @@
+@media screen and (min-width:767px){
+      .menu-container,
+      .menu-toggle {
+            display: none;
+      }     
+}
+
+.menu-container {
+      position: fixed;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding-bottom: 48px;
+      padding-left: 40px;
+      background-color: $hero-text-color;
+      z-index: 999;
+
+      transform: translateX(100%);
+      transition: transform $transition-durattion $timing-function;
+}
+
+.menu-container.is-open {
+      transform: translateX(0);
+}
+
+.mob-container{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+      overflow-y: auto;
+}
+
+.menu-toggle {
+      margin-left: auto;
+
+      min-height: 40px;
+      min-width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+}
+
+@media (min-width: 768px) {
+      .menu-toggle {
+            display: none;
+      }
+}
+
+.menu-toggle_icon--open,
+.menu-toggle_icon--close{
+      fill: $title-text-color;
+
+      .menu-toggle:hover>&,
+      .menu-toggle:focus>& {
+      fill: $accent-text-color;
+      }
+}
+
+.mob-menu_item:not(:last-child){
+      margin-bottom: 32px;
+}
+
+.mob-menu_link{
+      display: block;
+
+      color: $title-text-color;
+      
+      font-weight: 500;
+      font-size: 4vw;
+      line-height: 1.04;
+      letter-spacing: 0.02em;
+      
+      transition: color $transition-durattion $timing-function;
+
+      &:focus,
+      &:hover {
+      color: $accent-text-color;
+      }
+}
+
+.mob-menu-contact{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 23px;
+}
+
+.mob-menu_link--active{
+color: $accent-text-color;
+}
+
+.mob-menu-contact_item:not(:last-child){
+      margin-bottom: 32px;
+}
+
+.mob-menu-contact_link{
+color: $primary-text-color;
+
+      font-weight: 500;
+      font-size: 4vw;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+
+      transition: color $transition-durattion $timing-function;
+
+      .mob-menu-contact_item &:focus,
+      .mob-menu-contact_item &:hover {
+            color: $accent-text-color;
+      }
+}
+
+.mob-menu-social{
+      display: flex;
+      flex-direction: row;
+}
+
+.mob-menu-social_item{
+      display: block;
+      margin-bottom: 27px;
+      padding-right: 10px;
+      padding-left: 10px;
+      border-right: 1px solid $form-input-color;
+
+      &:last-child {
+      border-right: transparent;
+      }
+}
+
+.mob-menu-social_link{
+      font-weight: 500;
+      font-size: 2.5vw;
+      line-height: 1.2;   
+      letter-spacing: 0.02em;
+      
+      color: $accent-text-color;
+}

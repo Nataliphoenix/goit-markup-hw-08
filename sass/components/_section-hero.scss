@@ -1,0 +1,83 @@
+.section-hero {
+      padding-top: 180px;
+      padding-bottom: 198px;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+
+      background-image: linear-gradient(to left, $hero-gradient-color, $hero-gradient-color),
+            url('../images/img_14_mob.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: $footer-background-color;
+      @media (min-device-pixel-radio:2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(to left, $hero-gradient-color, $hero-gradient-color),
+                        url('../images/img_14_mob_2x.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: $footer-background-color;
+            }
+
+      @include tablet {
+            background-image: linear-gradient(to left, $hero-gradient-color, $hero-gradient-color),
+                  url('../images/img_14_tab.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media (min-device-pixel-radio:2),
+                  (min-resolution: 192dpi),
+                  (min-resolution: 2dppx) {
+                  background-image: linear-gradient(to left, $hero-gradient-color, $hero-gradient-color),
+                        url('../images/img_14_tab_2x.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-color: $footer-background-color;
+                  }
+            }
+
+      @include desktop {
+            padding-top: 200px;
+            padding-bottom: 200px;
+
+            background-image: linear-gradient(to left, $hero-gradient-color, $hero-gradient-color),
+                  url('../images/img_14.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media (min-device-pixel-radio:2),
+                  (min-resolution: 192dpi),
+                  (min-resolution: 2dppx) {
+                  background-image: linear-gradient(to left, $hero-gradient-color, $hero-gradient-color),
+                        url('../images/img_14_2x.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-color: $footer-background-color;
+            }
+      }
+}
+
+.hero {
+      text-align: center;
+}
+
+.hero_title {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+
+      color: $hero-text-color;
+
+      max-width: 360px;
+      font-size: 26px;
+      line-height: 1.62;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    
+     @include desktop {
+            max-width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+      }
+}

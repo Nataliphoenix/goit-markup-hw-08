@@ -1,0 +1,83 @@
+.clients {
+@media screen and (min-width:480px){
+      display: flex;
+      flex-wrap: wrap;
+      }
+}
+
+.clients_item {
+      margin-bottom: 30px;
+      margin-right: 30px;
+
+      @media screen and (min-width:320px) and (max-width:479px){
+      margin-left: 50px;
+      }
+
+      @media screen and (min-width:1200px) {
+            margin-bottom: 0;
+      }
+}
+
+.clients_item:last-child {
+      margin-right: 0;
+}
+.clients_item:nth-last-child(-n+2) {
+      @media screen and (min-width:480px) and (max-width:767px) {
+      margin-bottom: 0;
+      }
+}
+.clients_item:nth-last-child(-n+3){
+      @media screen and (min-width:768px) and (max-width:1199px){
+      margin-bottom: 0;
+      }
+}
+
+@media screen and (max-width:767px){
+      .clients_item:nth-child(even) {
+      margin-right: 0px;
+      }
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+      .clients_item:nth-child(3n) {
+      margin-right: 0px;
+      }
+}
+
+.clients_link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      width: 210px;
+      height: 92px;
+
+      border: 1px solid $social-network-color;
+      border-radius: 4px;
+
+      fill: $social-network-color;
+      background-color: $hero-text-color;
+      cursor: pointer;
+
+      transition: fill $transition-durattion $timing-function,
+  
+      border $transition-durattion $timing-function;
+
+      @include tablet {
+      width: 226px;
+            }
+      @include desktop{
+      width: 170px;
+      }
+
+      &:hover,
+      &:focus {
+      fill: $accent-text-color;
+      border: 1px solid $accent-text-color;
+      }
+}
+
+.clients_icon {
+
+      width: 106px;
+      height: 60px;
+}
