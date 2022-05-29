@@ -60,6 +60,8 @@
 .menu-toggle_icon--close{
       fill: $title-text-color;
 
+      transition: fill $transition-durattion $timing-function;
+
       .menu-toggle:hover>&,
       .menu-toggle:focus>& {
       fill: $accent-text-color;
@@ -95,7 +97,7 @@
 }
 
 .mob-menu_link--active{
-color: $accent-text-color;
+      color: $accent-text-color;
 }
 
 .mob-menu-contact_item:not(:last-child){
@@ -103,7 +105,7 @@ color: $accent-text-color;
 }
 
 .mob-menu-contact_link{
-color: $primary-text-color;
+      color: $primary-text-color;
 
       font-weight: 500;
       font-size: 4vw;
