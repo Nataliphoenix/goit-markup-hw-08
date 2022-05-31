@@ -201,8 +201,8 @@ input {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: auto;
   overflow: visible;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -211,10 +211,17 @@ input {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 479px) {
   .modal {
-    width: 100vw;
-    height: 100%;
+    width: 300px;
+    overflow-y: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -248,9 +255,22 @@ input {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (max-width: 479px) {
+  .modal_title {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal_title {
+    line-height: 1.15;
+  }
 }
 
 .modal_form {
@@ -367,6 +387,12 @@ input {
   display: inline-block;
   font-family: inherit;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1199px) {
+  .modal_checkboxLabel {
+    font-size: 12px;
+  }
 }
 
 .modal_checkbox--hidden:focus + .modal_checkboxIcon {
@@ -550,8 +576,8 @@ input {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-bottom: 48px;
   padding-left: 40px;
+  padding-bottom: 48px;
   background-color: #ffffff;
   z-index: 999;
   transform: translateX(100%);
@@ -613,8 +639,8 @@ input {
   display: block;
   color: #212121;
   font-weight: 500;
-  font-size: 4vw;
-  line-height: 1.04;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -623,10 +649,16 @@ input {
   color: #2196f3;
 }
 
+@media screen and (max-width: 479px) {
+  .mob-menu_link {
+    font-size: 26px;
+  }
+}
+
 .mob-menu-contact {
   display: flex;
   flex-direction: column;
-  margin-bottom: 23px;
+  margin-bottom: 64px;
 }
 
 .mob-menu_link--active {
@@ -637,28 +669,42 @@ input {
   margin-bottom: 32px;
 }
 
-.mob-menu-contact_link {
-  color: #757575;
+.mob-menu-contact_link-tel {
+  color: #2196f3;
   font-weight: 500;
-  font-size: 4vw;
-  line-height: 1.14;
+  font-size: 34px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-menu-contact_item .mob-menu-contact_link:focus,
-.mob-menu-contact_item .mob-menu-contact_link:hover {
-  color: #2196f3;
+@media screen and (max-width: 479px) {
+  .mob-menu-contact_link-tel {
+    font-size: 22px;
+  }
+}
+
+.mob-menu-contact_link-email {
+  color: currentColor;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 479px) {
+  .mob-menu-contact_link-email {
+    font-size: 16px;
+  }
 }
 
 .mob-menu-social {
   display: flex;
   flex-direction: row;
+  margin-bottom: 48px;
 }
 
 .mob-menu-social_item {
   display: block;
-  margin-bottom: 27px;
   padding-right: 10px;
   padding-left: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -666,19 +712,38 @@ input {
 
 .mob-menu-social_item:last-child {
   border-right: transparent;
+  padding-right: 0;
+}
+
+.mob-menu-social_item:first-child {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 479px) {
+  .mob-menu-social_item {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
 }
 
 .mob-menu-social_link {
+  display: block;
   font-weight: 500;
-  font-size: 2.5vw;
-  line-height: 1.2;
+  font-size: 22px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
 
+@media screen and (max-width: 479px) {
+  .mob-menu-social_link {
+    font-size: 14px;
+  }
+}
+
 .section-hero {
-  padding-top: 180px;
-  padding-bottom: 198px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 100%;
   height: auto;
   margin-left: auto;
@@ -719,6 +784,7 @@ input {
   .section-hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img_14.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1133,6 +1199,7 @@ footer {
   .footer_part {
     text-align: start;
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1212,7 +1279,6 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .footer_form {
-    margin-right: 12px;
     justify-content: flex-end;
   }
 }
@@ -1485,7 +1551,7 @@ footer {
 @media (min-width: 320px) and (max-width: 479px) {
   .overlay-element {
     font-size: 17px;
-    padding: 30px 24px;
+    padding: 15px 24px;
     line-height: 1.2;
   }
 }

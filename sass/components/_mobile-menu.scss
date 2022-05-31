@@ -12,8 +12,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      padding-bottom: 48px;
       padding-left: 40px;
+      padding-bottom: 48px;
       background-color: $hero-text-color;
       z-index: 999;
 
@@ -78,8 +78,8 @@
       color: $title-text-color;
       
       font-weight: 500;
-      font-size: 4vw;
-      line-height: 1.04;
+      font-size: 40px;
+      line-height: 1.17;
       letter-spacing: 0.02em;
       
       transition: color $transition-durattion $timing-function;
@@ -88,12 +88,16 @@
       &:hover {
       color: $accent-text-color;
       }
+
+      @media screen and (max-width:479px) {
+      font-size: 26px;
+      }
 }
 
 .mob-menu-contact{
       display: flex;
       flex-direction: column;
-      margin-bottom: 23px;
+      margin-bottom: 64px;
 }
 
 .mob-menu_link--active{
@@ -104,44 +108,69 @@
       margin-bottom: 32px;
 }
 
-.mob-menu-contact_link{
-      color: $primary-text-color;
+.mob-menu-contact_link-tel{
+      color: $accent-text-color;
 
       font-weight: 500;
-      font-size: 4vw;
-      line-height: 1.14;
+      font-size: 34px;
+      line-height: 1.17;
       letter-spacing: 0.02em;
 
-      transition: color $transition-durattion $timing-function;
+      @media screen and (max-width:479px) {
+      font-size: 22px;
+      }
+}
 
-      .mob-menu-contact_item &:focus,
-      .mob-menu-contact_item &:hover {
-            color: $accent-text-color;
+.mob-menu-contact_link-email {
+      color: currentColor;
+
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+
+      @media screen and (max-width:479px) {
+      font-size: 16px;
       }
 }
 
 .mob-menu-social{
       display: flex;
       flex-direction: row;
+      margin-bottom: 48px;
 }
 
 .mob-menu-social_item{
       display: block;
-      margin-bottom: 27px;
       padding-right: 10px;
       padding-left: 10px;
       border-right: 1px solid $form-input-color;
 
       &:last-child {
       border-right: transparent;
+      padding-right: 0;
+      }
+
+      &:first-child {
+      padding-left: 0;
+      }
+
+      @media screen and (max-width:479px) {
+      padding-right: 6px;
+      padding-left: 6px;
       }
 }
 
 .mob-menu-social_link{
+      display: block;
       font-weight: 500;
-      font-size: 2.5vw;
-      line-height: 1.2;   
+      font-size: 22px;
+      line-height: 1.22;   
       letter-spacing: 0.02em;
       
       color: $accent-text-color;
+
+      @media screen and (max-width:479px) {
+      font-size: 14px;
+      }
 }
