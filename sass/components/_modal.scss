@@ -5,6 +5,7 @@
       width: 100%;
       height: 100%;
       z-index: 99;
+      overflow-y: auto;
 
       background-color: $overlay-hero-modal;
       transition: opacity $transition-durattion $timing-function,
@@ -43,7 +44,10 @@
 
       @media screen and (max-width: 479px) {
       width: 300px;
-      overflow-y: auto;
+      }
+
+      @media screen and (max-height: 610px) {
+      top: 55%;
       }
 
       @media screen and (min-width: 1200px) {
